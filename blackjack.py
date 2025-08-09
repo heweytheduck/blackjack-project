@@ -4,7 +4,6 @@ from deck import Deck
 
 # Helper function to display hands
 def show_hand(name, hand, deck, hide_second_card=False):
-    """Prints a hand, optionally hiding the dealer's second card."""
     if hide_second_card:
         display_cards = [f"{hand[0][0]}{hand[0][1]}", "??"]
         return f"{name}: {' '.join(display_cards)}"
@@ -93,3 +92,4 @@ async def game():
 
 # Run game
 asyncio.run(game())
+
